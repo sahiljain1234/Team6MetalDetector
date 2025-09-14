@@ -1,0 +1,22 @@
+<!-- res/drawable/metal_detector_logo.xml -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Outermost Circle -->
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M12,2C6.48,2 2,6.48 2,12s4.48,10 10,10 10-4.48 10-10S17.52,2 12,2zm0,14c-3.31,0-6-2.69-6-6s2.69-6 6-6 6,2.69 6,6-2.69,6-6,6z"/>
+
+    <!-- Middle Circle -->
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M12,4c-4.42,0-8,3.58-8,8s3.58,8 8,8 8-3.58 8-8s-3.58-8-8-8zm0,14c-3.31,0-6-2.69-6-6s2.69-6 6-6 6,2.69 6,6-2.69,6-6,6z"/>
+
+    <!-- Innermost Circle -->
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M12,6c-2.21,0-4,1.79-4,4s1.79,4 4,4 4-1.79 4-4-1.79-4-4-4zm0,10c-2.21,0-4-1.79-4-4s1.79-4 4-4 4,1.79 4,4-1.79,4-4,4z"/>
+</vector>

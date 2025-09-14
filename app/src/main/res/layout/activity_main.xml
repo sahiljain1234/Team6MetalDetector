@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C9F3EF"
+    android:padding="40dp"
+    tools:context=".MainActivity">
+
+    <!-- Metal Detector Logo -->
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="147dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/metal_detector" />
+
+    <!-- Additional Hardware Button (currently does nothing) -->
+
+    <TextView
+        android:id="@+id/TextViewOpening"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoImageView"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="49dp"
+        android:fontFamily="sans-serif-medium"
+        android:paddingStart="55dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp"
+        android:text="Your metal search begins here. Uncover valuable treasures, insights and much more."
+        android:textColor="#676262"
+        android:textSize="17sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/phoneSensorButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextViewOpening"
+        android:layout_marginTop="95dp"
+        android:background="@drawable/rounded_button"
+        android:text="Use Phone's Sensor"
+        android:textColor="#FFFFFF" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/hardwareButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Use Additional Hardware"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:layout_below="@id/phoneSensorButton"
+        android:background="@drawable/rounded_button" />
+
+</RelativeLayout>

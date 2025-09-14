@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C9F3EF"
+    android:padding="40dp"
+    tools:context=".MetalDetectorActivity">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/radarImageView2"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/radar" />
+
+    <ImageView
+        android:id="@+id/radarImageView1"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/radar" />
+
+    <TextView
+        android:id="@+id/metalStatusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radarImageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:fontFamily="sans-serif-medium"
+        android:padding="8dp"
+        android:shadowColor="#A0A0A0"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:text="..."
+        android:textColor="#615F5F"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/stopButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/metalStatusTextView"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/rounded_button"
+        android:stateListAnimator="@null"
+        android:text="Stop Metal Detection"
+        android:textColor="#FFFFFF" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/startButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/metalStatusTextView"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/rounded_button"
+        android:stateListAnimator="@null"
+        android:text="Start Metal Detection"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
